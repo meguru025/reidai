@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>文字タグの見本帳</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <header>
+    <h1>文字タグの見本帳（HTML Typo Cheatsheet）</h1>
+    <p class="lead">このページは、見出し・本文・強調・引用・コード・リスト等の代表的な文字系タグをまとめて確認できます。</p>
+  </header>
+
+  <main>
+    <!-- 見出し -->
+    <section>
+      <h2>見出しタグ h1〜h6</h2>
+      <h1>H1 見出し（ページの主見出し）</h1>
+      <h2>H2 見出し（章）</h2>
+      <h3>H3 見出し（節）</h3>
+      <h4>H4 見出し</h4>
+      <h5>H5 見出し</h5>
+      <h6>H6 見出し（最小）</h6>
+    </section>
+
+    <!-- 段落と改行 -->
+    <section>
+      <h2>段落（p）と改行（br）</h2>
+      <p>
+        これは段落（p）です。文章は段落ごとにまとまります。<br>
+        ここだけは段落の中で強制改行（br）を使っています。
+      </p>
+    </section>
+
+    <!-- 強調 -->
+    <section>
+      <h2>強調（b / strong / i / em / mark / small）</h2>
+      <p>
+        <b>b は見た目だけ太字</b>、<strong>strong は“意味的に重要”な強調</strong>。<br>
+        <i>i は見た目だけ斜体</i>、<em>em は“意味的に”強調（読み上げにも反映）</em>。<br>
+        <mark>mark は蛍光ペン風のハイライト</mark>、<small>small は小さな注釈文字</small>。
+      </p>
+      <p>
+        数式や化学式：x<sup>2</sup> + y<sup>2</sup>、H<sub>2</sub>O（sup=上付き / sub=下付き）
+      </p>
+    </section>
+
+    <!-- 引用 -->
+    <section>
+      <h2>引用（blockquote / q）</h2>
+      <blockquote>
+        <p>これは blockquote（段落引用）です。文全体を引用として示すときに使います。</p>
+        <cite>— 例：誰かの発言や書籍などの出典</cite>
+      </blockquote>
+      <p>
+        文中の短い引用は <q>このように q タグで示します</q>。
+      </p>
+    </section>
+
+    <!-- コード -->
+    <section>
+      <h2>コード（code / pre）</h2>
+      <p>行内コードは <code>&lt;code&gt;console.log("Hello")&lt;/code&gt;</code> のように表示。</p>
+      <pre><code>/* pre は改行や空白をそのまま表示 */
+h1 {
+  color: cornflowerblue;
+  font-size: 40px;
+}
+      </code></pre>
+    </section>
+
+    <!-- リスト -->
+    <section>
+      <h2>リスト（ul / ol / li）</h2>
+      <div class="lists">
+        <div>
+          <h3>箇条書き（ul）</h3>
+          <ul>
+            <li>りんご</li>
+            <li>みかん</li>
+            <li>ぶどう</li>
+          </ul>
+        </div>
+        <div>
+          <h3>番号付き（ol）</h3>
+          <ol>
+            <li>下準備をする</li>
+            <li>材料を混ぜる</li>
+            <li>焼いて完成！</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- span（部分装飾） -->
+    <section>
+      <h2>部分的な装飾（span）</h2>
+      <p>
+        文の一部だけを <span class="accent">強調装飾</span> したいときに便利。
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Typo Cheatsheet Sample</small>
+  </footer>
+</body>
+</html>
